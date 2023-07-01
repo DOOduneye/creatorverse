@@ -1,0 +1,254 @@
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.main_splash {
+  place-items: center;
+  width: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  background-image: url('./assets/nasa.jpg');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 1px solid wheat;
+}
+
+.view_add_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash_button {
+  height: 50px;
+  width: 300px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+}
+
+#creatorverse_title {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+/* Creator Card */
+
+.creators {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-gap: 1rem;
+  padding: 2rem;
+}
+
+.card {
+  border-radius: 3px;
+  border: 1px solid wheat;
+  text-align: left;
+  padding: 30px 40px 0 40px;
+  height: 300px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .creators {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+.creator_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 5rem;
+  margin-bottom: 0;
+  text-align: left;
+  color: rgb(156, 156, 238);
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+  font-size: .7rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.brand_icon {
+  font-size: 1.2rem;
+  /* margin: 10px 0; */
+}
+
+.attribute_icon {
+  font-size: .8rem;
+}
+
+.brand_group {
+  display: flex;
+  gap: 12px;
+}
+
+.creator_title_group {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.creator_title_group > *:first-child {
+  flex-grow: 1;
+}
+
+.loading {
+  text-align: center;
+  font-size: 32px;
+  color: #646cff;
+  padding-top: 10px;
+}
+
+
+.add_creators {
+  padding: 2rem;
+}
+
+/* Creator View */
+
+.view {
+  text-align: center;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 1080px) {
+  .view {
+    flex-wrap: wrap;
+  }
+  .creator_buttons {
+    flex-wrap: wrap;
+  }
+}
+
+.creator_image {
+  border: 1px solid #646cff;
+  object-fit: cover;
+  width: auto;
+  height: 400px;
+}
+
+.creator_content {
+  /* margin-left: 2rem; */
+  text-align: left;
+}
+
+.social_media {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: max-content;
+}
+
+.creator_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: center;
+  margin-top: 2rem;
+  width: auto;
+  height: 100px;
+  margin-bottom: 2rem;
+}
+
+/* Modal */
+
+.modal {
+  display: aboslute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  max-width: 90%;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.button {
+  margin: 0 0.5rem;
+}
+
+.danger {
+  color: #fff;
+  background-color: #ff4136;
+  border-color: #ff4136;
+}
+
+.danger:hover {
+  background-color: #e62619;
+  border-color: #e62619;
+}
