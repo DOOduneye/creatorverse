@@ -35,7 +35,8 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-[Video Walkthrough]('https://imgur.com/a/sVmBHmC.gif')
+[Video Walkthrough](https://imgur.com/a/sVmBHmC.gif)
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  👉🏿 
 Apple Screenshot and
