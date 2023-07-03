@@ -14,7 +14,7 @@ The following **required** functionality is completed:
 - [X] **A logical component structure in React is used to create the frontend of the app**
 - [X] **At least five content creators are displayed on the homepage of the app**
 - [X] **Each content creator item includes their name, a link to their channel/page, and a short description of their content**
-- [ ] **API calls use the async/await design pattern via Axios or fetch()** 
+- [X] **API calls use the async/await design pattern via Axios or fetch()** 
 - [X] **Clicking on a content creator item takes the user to their details page, which includes their name, url, and description**
 - [X] **Each content creator has their own unique URL**
 - [X] **The user can edit a content creator to change their name, url, or description**
